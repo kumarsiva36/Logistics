@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "67fa37fe45635b14c1135576"
+  },
+  "driverId": {
+    "$numberLong": "1"
+  },
+  "name": "Siva",
+  "location": "chennai",
+  "locationcoord": {
+    "coordinates": [
+      76.8113413,
+      11.0140977
+    ],
+    "type": "Point"
+  },
+  "contact": "+919008007005",
+  "assigned": "0",
+  "createdAt": {
+    "$date": "2025-04-12T09:53:02.623Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T09:53:02.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fa382045635b14c1135579"
+  },
+  "driverId": {
+    "$numberLong": "2"
+  },
+  "name": "kumar",
+  "location": "coimbatore",
+  "locationcoord": {
+    "coordinates": [
+      76.8113413,
+      11.0140977
+    ],
+    "type": "Point"
+  },
+  "contact": "+919008007007",
+  "assigned": "1",
+  "createdAt": {
+    "$date": "2025-04-12T09:53:36.804Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T09:54:02.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fa4a45cba735fa4ac7a3a2"
+  },
+  "driverId": {
+    "$numberLong": "3"
+  },
+  "name": "Driver01",
+  "location": "chennai",
+  "locationcoord": {
+    "coordinates": [
+      13.0836939,
+      80.270186
+    ],
+    "type": "Point"
+  },
+  "contact": "9632587415",
+  "assigned": "0",
+  "createdAt": {
+    "$date": "2025-04-12T11:11:01.938Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T11:11:01.938Z"
+  },
+  "__v": 0
+}]

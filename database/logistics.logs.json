@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "67fa3e93cba735fa4ac7a39f"
+  },
+  "lId": {
+    "$numberLong": "1"
+  },
+  "packageId": "102",
+  "status": "Out for Delivery",
+  "message": "Package Status Update",
+  "driver": [
+    {
+      "id": 2,
+      "name": "kumar",
+      "contact": "+919008007002"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-12T10:21:07.369Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T10:21:07.369Z"
+  },
+  "__v": 0
+}]

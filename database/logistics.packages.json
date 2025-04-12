@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "67fa33079104465cfd025a21"
+  },
+  "pId": {
+    "$numberLong": "1"
+  },
+  "packageId": "102",
+  "source": "coimbatore",
+  "sourceLocation": {
+    "coordinates": [
+      76.9628425,
+      11.0018115
+    ],
+    "type": "Point"
+  },
+  "destination": "hydrabad",
+  "destinationLocation": {
+    "coordinates": [
+      67.1277145,
+      24.8305644
+    ],
+    "type": "Point"
+  },
+  "status": "Out for Delivery",
+  "customer": [
+    {
+      "name": "Siva",
+      "contact": "9852369874"
+    }
+  ],
+  "driver": [
+    {
+      "id": 2,
+      "name": "kumar",
+      "contact": "+919008007002"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-12T09:31:51.956Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T10:21:07.347Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fa4d2ccba735fa4ac7a3a9"
+  },
+  "pId": {
+    "$numberLong": "2"
+  },
+  "packageId": "105",
+  "source": "Coimbatore",
+  "sourceLocation": {
+    "coordinates": [
+      76.9628425,
+      11.0018115
+    ],
+    "type": "Point"
+  },
+  "destination": "Erode",
+  "destinationLocation": {
+    "coordinates": [
+      77.35052739885393,
+      11.49052815
+    ],
+    "type": "Point"
+  },
+  "status": "Pending",
+  "customer": [
+    {
+      "name": "Siva",
+      "contact": "9852369874"
+    }
+  ],
+  "driver": [],
+  "createdAt": {
+    "$date": "2025-04-12T11:23:24.130Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T11:23:24.130Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fa4d6fcba735fa4ac7a3ae"
+  },
+  "pId": {
+    "$numberLong": "3"
+  },
+  "packageId": "106",
+  "source": "Karur",
+  "sourceLocation": {
+    "coordinates": [
+      78.38286541157868,
+      10.821767099999999
+    ],
+    "type": "Point"
+  },
+  "destination": "Coimbatore",
+  "destinationLocation": {
+    "coordinates": [
+      76.9628425,
+      11.0018115
+    ],
+    "type": "Point"
+  },
+  "status": "Pending",
+  "customer": [
+    {
+      "name": "Praveen",
+      "contact": "9852369875"
+    }
+  ],
+  "driver": [],
+  "createdAt": {
+    "$date": "2025-04-12T11:24:31.600Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-12T11:24:31.600Z"
+  },
+  "__v": 0
+}]
