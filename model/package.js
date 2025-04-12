@@ -20,6 +20,7 @@ const packageSchema = mongoose.Schema({
       },
     status: { type: String, required: true },
     customer : { type : Array , "default" : [] },
+    driver : { type : Array , "default" : [] },
     createdAt: { type: Date, default: Date.now }
 },
 {

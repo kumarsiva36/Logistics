@@ -60,6 +60,18 @@ router.post('/addpackage',[
   ], LogController.updateDriver);
   router.get('/view-package', LogController.viewPackeage);
   router.get('/view-drivers', LogController.viewDrivers);
+  router.post('/get-package-drivers',[
+    check('pId','packageId is required').notEmpty()
+  ], LogController.getPackageDrivers);
+  router.post('/assign-driver',[
+    check('pId','packageId is required').notEmpty(),
+    check('driver','driver details is required').notEmpty(),
+  ], LogController.assignDriver);
+  router.post('/status-update',[
+    check('pId','packageId is required').notEmpty(),
+    check('status','status is required').notEmpty(),
+  ], LogController.StatusUpdate);
+  router.get('/status-logs', LogController.statusLogs);
 
  
 

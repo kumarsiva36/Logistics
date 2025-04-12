@@ -11,6 +11,7 @@ const driverSchema = mongoose.Schema({
         coordinates: [Number],
       },
     contact: { type: String, required: true },
+    assigned : { type : String , "default" : "0" },
     createdAt: { type: Date, default: Date.now }
 },
 {
