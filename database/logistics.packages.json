@@ -22,7 +22,7 @@
     ],
     "type": "Point"
   },
-  "status": "Out for Delivery",
+  "status": "Delivered",
   "customer": [
     {
       "name": "Siva",
@@ -40,7 +40,7 @@
     "$date": "2025-04-12T09:31:51.956Z"
   },
   "updatedAt": {
-    "$date": "2025-04-12T10:21:07.347Z"
+    "$date": "2025-04-14T04:18:41.393Z"
   },
   "__v": 0
 },
@@ -54,33 +54,39 @@
   "packageId": "105",
   "source": "Coimbatore",
   "sourceLocation": {
+    "type": "Point",
     "coordinates": [
       76.9628425,
       11.0018115
-    ],
-    "type": "Point"
+    ]
   },
-  "destination": "Erode",
+  "destination": "Delhi",
   "destinationLocation": {
+    "type": "Point",
     "coordinates": [
-      77.35052739885393,
-      11.49052815
-    ],
-    "type": "Point"
+      77.1716954,
+      28.6273928
+    ]
   },
-  "status": "Pending",
+  "status": "Out for Delivery",
   "customer": [
     {
       "name": "Siva",
       "contact": "9852369874"
     }
   ],
-  "driver": [],
+  "driver": [
+    {
+      "id": 1,
+      "name": "Siva",
+      "contact": "+919008007005"
+    }
+  ],
   "createdAt": {
     "$date": "2025-04-12T11:23:24.130Z"
   },
   "updatedAt": {
-    "$date": "2025-04-12T11:23:24.130Z"
+    "$date": "2025-04-14T09:33:17.381Z"
   },
   "__v": 0
 },
@@ -121,6 +127,92 @@
   },
   "updatedAt": {
     "$date": "2025-04-12T11:24:31.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fccb0c981cf1a5a13ed6f8"
+  },
+  "pId": {
+    "$numberLong": "4"
+  },
+  "packageId": "260",
+  "source": "Chennai",
+  "sourceLocation": {
+    "type": "Point",
+    "coordinates": [
+      80.270186,
+      13.0836939
+    ]
+  },
+  "destination": "coimbatore",
+  "destinationLocation": {
+    "type": "Point",
+    "coordinates": [
+      76.9628425,
+      11.0018115
+    ]
+  },
+  "status": "Out for Delivery",
+  "customer": [
+    {
+      "name": "praveen",
+      "contact": "8889652365"
+    }
+  ],
+  "driver": [
+    {
+      "id": 4,
+      "name": "Driver02",
+      "contact": "9632589635"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-14T08:45:00.025Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-14T09:36:28.673Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fcd4542158d3e860e9d566"
+  },
+  "pId": {
+    "$numberLong": "5"
+  },
+  "packageId": "1001",
+  "source": "Coimbatore",
+  "sourceLocation": {
+    "type": "Point",
+    "coordinates": [
+      76.9628425,
+      11.0018115
+    ]
+  },
+  "destination": "Delhi",
+  "destinationLocation": {
+    "type": "Point",
+    "coordinates": [
+      77.1716954,
+      28.6273928
+    ]
+  },
+  "status": "Pending",
+  "customer": [
+    {
+      "name": "Siva kumar",
+      "contact": "9888965236"
+    }
+  ],
+  "driver": [],
+  "createdAt": {
+    "$date": "2025-04-14T09:24:36.235Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-14T09:32:38.560Z"
   },
   "__v": 0
 }]

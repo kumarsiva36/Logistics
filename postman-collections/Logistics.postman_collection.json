@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "a8572ca4-e778-4120-984e-dfe04387454a",
+		"name": "Logistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23013403"
+	},
+	"item": [
+		{
+			"name": "http://192.168.1.106:5000/api/addpackage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiODkwNTQ4ODdiZGJiZDg1ZWJiOWE5MTBlMzJiOGYzOTI3NTk3OTNmN2E2MTg3ZWE3NjhjMjBjMWU0NTM0Y2Q1YjRjZjZjMThkMTA3M2ExZTgiLCJpYXQiOjE3NDE2NzIzMzMuNTY0MTk5LCJuYmYiOjE3NDE2NzIzMzMuNTY0MjA0LCJleHAiOjE3NzMyMDgzMzMuMzY3MjkzLCJzdWIiOiI3MSIsInNjb3BlcyI6W119.ILvC8rSoDmkM3ddQFtAl8Yi8TOC0cxR8RZKAsbM0UlRxmTPNLyYDwE7l5vO8BpvKRlkiSFK9J0baH1_XM3jwajOtqMrP8kO4EGr6k1hyRgBnlCkb7kMPun-Wfb5bFwTuvVWmYMI6H37lJ0IHG04SrjsTGg2nvjDc8OaWZahRe3Y_OKyjKFnVHBt08pMzC1aX9LRThADbFK1wvvIYTV4j3ffyJLtt7oqrxdkS754pg8HBqaxYGYbjcxdPp3mgstF67WOHR7oQBx87kz95QomrBY5OOwRRjQ6pCc8DN_Xoa3kp2jhiAvx3N_uUhxWQZgUYqW02mqRL93RdprKrpeMX6EhOzxHIEwMq8qgjTKE3xA7hwk_1DVxLxAO6qoNA1TCNXgP_lQy7dFtFW7Nmef4W4srwxP2FPmnC7GP6IfCzfmAl07r-WixDj0XL3oH5Vh1AiPS5jFWvY5lK9V8LHTGnN-Zt68UbKuRFDCFJjgtk08mLtsyrqrw8JWl6UOl1vR0AOeF4o9qINc-R6kDg-KlH2z019GEma45inIjzOOzWgLZSoJUt9LOu_Y8VDwdzclcDFxoCOIT-8wdG4TYJMtPKSXFShWoo7xfrHpGXZ-AcKHfSfFdaOgoma6zn_amxG2rArht-hDcMKQ93BmZwzhRGBWXWGshM7nFgb82PdHhrNDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"packageId\":\"260\",\"source\":\"coimbatore\",\"sourceLocation\":{\"coordinates\":[76.9628425,11.0018115]},\"destination\":\"karur\",\"destinationLocation\":{\"coordinates\":[78.38286541157868,10.821767099999999]},\"status\":\"Dispatched\",\"customer\":{\"name\":\"praveen\",\"contact\":\"8889652365\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/addpackage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"addpackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/add-driver",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiODkwNTQ4ODdiZGJiZDg1ZWJiOWE5MTBlMzJiOGYzOTI3NTk3OTNmN2E2MTg3ZWE3NjhjMjBjMWU0NTM0Y2Q1YjRjZjZjMThkMTA3M2ExZTgiLCJpYXQiOjE3NDE2NzIzMzMuNTY0MTk5LCJuYmYiOjE3NDE2NzIzMzMuNTY0MjA0LCJleHAiOjE3NzMyMDgzMzMuMzY3MjkzLCJzdWIiOiI3MSIsInNjb3BlcyI6W119.ILvC8rSoDmkM3ddQFtAl8Yi8TOC0cxR8RZKAsbM0UlRxmTPNLyYDwE7l5vO8BpvKRlkiSFK9J0baH1_XM3jwajOtqMrP8kO4EGr6k1hyRgBnlCkb7kMPun-Wfb5bFwTuvVWmYMI6H37lJ0IHG04SrjsTGg2nvjDc8OaWZahRe3Y_OKyjKFnVHBt08pMzC1aX9LRThADbFK1wvvIYTV4j3ffyJLtt7oqrxdkS754pg8HBqaxYGYbjcxdPp3mgstF67WOHR7oQBx87kz95QomrBY5OOwRRjQ6pCc8DN_Xoa3kp2jhiAvx3N_uUhxWQZgUYqW02mqRL93RdprKrpeMX6EhOzxHIEwMq8qgjTKE3xA7hwk_1DVxLxAO6qoNA1TCNXgP_lQy7dFtFW7Nmef4W4srwxP2FPmnC7GP6IfCzfmAl07r-WixDj0XL3oH5Vh1AiPS5jFWvY5lK9V8LHTGnN-Zt68UbKuRFDCFJjgtk08mLtsyrqrw8JWl6UOl1vR0AOeF4o9qINc-R6kDg-KlH2z019GEma45inIjzOOzWgLZSoJUt9LOu_Y8VDwdzclcDFxoCOIT-8wdG4TYJMtPKSXFShWoo7xfrHpGXZ-AcKHfSfFdaOgoma6zn_amxG2rArht-hDcMKQ93BmZwzhRGBWXWGshM7nFgb82PdHhrNDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\":\"coimbatore\",\r\n\"locationcoord\":{\"coordinates\": [76.8113413,11.0140977] },\r\n\"name\":\"kumar\",\r\n    \"contact\":\"+919008007007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/add-driver",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"add-driver"
+					]
+				},
+				"description": "Add Driver"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/view-package",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiODkwNTQ4ODdiZGJiZDg1ZWJiOWE5MTBlMzJiOGYzOTI3NTk3OTNmN2E2MTg3ZWE3NjhjMjBjMWU0NTM0Y2Q1YjRjZjZjMThkMTA3M2ExZTgiLCJpYXQiOjE3NDE2NzIzMzMuNTY0MTk5LCJuYmYiOjE3NDE2NzIzMzMuNTY0MjA0LCJleHAiOjE3NzMyMDgzMzMuMzY3MjkzLCJzdWIiOiI3MSIsInNjb3BlcyI6W119.ILvC8rSoDmkM3ddQFtAl8Yi8TOC0cxR8RZKAsbM0UlRxmTPNLyYDwE7l5vO8BpvKRlkiSFK9J0baH1_XM3jwajOtqMrP8kO4EGr6k1hyRgBnlCkb7kMPun-Wfb5bFwTuvVWmYMI6H37lJ0IHG04SrjsTGg2nvjDc8OaWZahRe3Y_OKyjKFnVHBt08pMzC1aX9LRThADbFK1wvvIYTV4j3ffyJLtt7oqrxdkS754pg8HBqaxYGYbjcxdPp3mgstF67WOHR7oQBx87kz95QomrBY5OOwRRjQ6pCc8DN_Xoa3kp2jhiAvx3N_uUhxWQZgUYqW02mqRL93RdprKrpeMX6EhOzxHIEwMq8qgjTKE3xA7hwk_1DVxLxAO6qoNA1TCNXgP_lQy7dFtFW7Nmef4W4srwxP2FPmnC7GP6IfCzfmAl07r-WixDj0XL3oH5Vh1AiPS5jFWvY5lK9V8LHTGnN-Zt68UbKuRFDCFJjgtk08mLtsyrqrw8JWl6UOl1vR0AOeF4o9qINc-R6kDg-KlH2z019GEma45inIjzOOzWgLZSoJUt9LOu_Y8VDwdzclcDFxoCOIT-8wdG4TYJMtPKSXFShWoo7xfrHpGXZ-AcKHfSfFdaOgoma6zn_amxG2rArht-hDcMKQ93BmZwzhRGBWXWGshM7nFgb82PdHhrNDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pId\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/view-package",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"view-package"
+					]
+				},
+				"description": "View All Packages"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/view-drivers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiODkwNTQ4ODdiZGJiZDg1ZWJiOWE5MTBlMzJiOGYzOTI3NTk3OTNmN2E2MTg3ZWE3NjhjMjBjMWU0NTM0Y2Q1YjRjZjZjMThkMTA3M2ExZTgiLCJpYXQiOjE3NDE2NzIzMzMuNTY0MTk5LCJuYmYiOjE3NDE2NzIzMzMuNTY0MjA0LCJleHAiOjE3NzMyMDgzMzMuMzY3MjkzLCJzdWIiOiI3MSIsInNjb3BlcyI6W119.ILvC8rSoDmkM3ddQFtAl8Yi8TOC0cxR8RZKAsbM0UlRxmTPNLyYDwE7l5vO8BpvKRlkiSFK9J0baH1_XM3jwajOtqMrP8kO4EGr6k1hyRgBnlCkb7kMPun-Wfb5bFwTuvVWmYMI6H37lJ0IHG04SrjsTGg2nvjDc8OaWZahRe3Y_OKyjKFnVHBt08pMzC1aX9LRThADbFK1wvvIYTV4j3ffyJLtt7oqrxdkS754pg8HBqaxYGYbjcxdPp3mgstF67WOHR7oQBx87kz95QomrBY5OOwRRjQ6pCc8DN_Xoa3kp2jhiAvx3N_uUhxWQZgUYqW02mqRL93RdprKrpeMX6EhOzxHIEwMq8qgjTKE3xA7hwk_1DVxLxAO6qoNA1TCNXgP_lQy7dFtFW7Nmef4W4srwxP2FPmnC7GP6IfCzfmAl07r-WixDj0XL3oH5Vh1AiPS5jFWvY5lK9V8LHTGnN-Zt68UbKuRFDCFJjgtk08mLtsyrqrw8JWl6UOl1vR0AOeF4o9qINc-R6kDg-KlH2z019GEma45inIjzOOzWgLZSoJUt9LOu_Y8VDwdzclcDFxoCOIT-8wdG4TYJMtPKSXFShWoo7xfrHpGXZ-AcKHfSfFdaOgoma6zn_amxG2rArht-hDcMKQ93BmZwzhRGBWXWGshM7nFgb82PdHhrNDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\":\"coimbatore\",\r\n\"locationcoord\":{\"coordinates\": [11.0140977,76.8113413] },\r\n\"name\":\"kumar\",\r\n    \"contact\":\"+919008007002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/view-drivers",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"view-drivers"
+					]
+				},
+				"description": "Get All drivers"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/update-package",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiODkwNTQ4ODdiZGJiZDg1ZWJiOWE5MTBlMzJiOGYzOTI3NTk3OTNmN2E2MTg3ZWE3NjhjMjBjMWU0NTM0Y2Q1YjRjZjZjMThkMTA3M2ExZTgiLCJpYXQiOjE3NDE2NzIzMzMuNTY0MTk5LCJuYmYiOjE3NDE2NzIzMzMuNTY0MjA0LCJleHAiOjE3NzMyMDgzMzMuMzY3MjkzLCJzdWIiOiI3MSIsInNjb3BlcyI6W119.ILvC8rSoDmkM3ddQFtAl8Yi8TOC0cxR8RZKAsbM0UlRxmTPNLyYDwE7l5vO8BpvKRlkiSFK9J0baH1_XM3jwajOtqMrP8kO4EGr6k1hyRgBnlCkb7kMPun-Wfb5bFwTuvVWmYMI6H37lJ0IHG04SrjsTGg2nvjDc8OaWZahRe3Y_OKyjKFnVHBt08pMzC1aX9LRThADbFK1wvvIYTV4j3ffyJLtt7oqrxdkS754pg8HBqaxYGYbjcxdPp3mgstF67WOHR7oQBx87kz95QomrBY5OOwRRjQ6pCc8DN_Xoa3kp2jhiAvx3N_uUhxWQZgUYqW02mqRL93RdprKrpeMX6EhOzxHIEwMq8qgjTKE3xA7hwk_1DVxLxAO6qoNA1TCNXgP_lQy7dFtFW7Nmef4W4srwxP2FPmnC7GP6IfCzfmAl07r-WixDj0XL3oH5Vh1AiPS5jFWvY5lK9V8LHTGnN-Zt68UbKuRFDCFJjgtk08mLtsyrqrw8JWl6UOl1vR0AOeF4o9qINc-R6kDg-KlH2z019GEma45inIjzOOzWgLZSoJUt9LOu_Y8VDwdzclcDFxoCOIT-8wdG4TYJMtPKSXFShWoo7xfrHpGXZ-AcKHfSfFdaOgoma6zn_amxG2rArht-hDcMKQ93BmZwzhRGBWXWGshM7nFgb82PdHhrNDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"pId\":11,\"packageId\":\"260\",\"source\":\"chennai\",\"sourceLocation\":{\"coordinates\":[11.0018115,76.9628425]},\"destination\":\"coimbatore\",\"destinationLocation\":{\"coordinates\":[10.821767099999999,78.38286541157868]},\"status\":\"Pending\",\"customer\":{\"name\":\"praveen\",\"contact\":\"8889652365\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/update-package",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update-package"
+					]
+				},
+				"description": "Update the package details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/edit-package",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/edit-package",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"edit-package"
+					]
+				},
+				"description": "Get Package details based in packedId"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/get-package-drivers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/get-package-drivers",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get-package-drivers"
+					]
+				},
+				"description": "find the avaliabele drivers with in 7km of package source"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/assign-driver",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pId\":1,\r\n    \"driver\":{\r\n        \"id\":2,\r\n        \"name\": \"kumar\",\r\n        \"contact\": \"+919008007002\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/assign-driver",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"assign-driver"
+					]
+				},
+				"description": "Assign driver to Package"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/status-update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pId\":1,\r\n    \"status\":\"Delivered\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/status-update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"status-update"
+					]
+				},
+				"description": "Status update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/status-logs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/status-logs",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"status-logs"
+					]
+				},
+				"description": "Status update logs"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/edit-driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"driverId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/edit-driver",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"edit-driver"
+					]
+				},
+				"description": "Edit Driver"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.106:5000/api/update-driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"driverId\":2,\r\n    \"name\":\"Sivakumar\",\r\n    \"contact\":\"9632587418\",\r\n    \"location\":\"coimbatore\",\r\n    \"locationcoord\":{\"type\": \"Point\",\"coordinates\": [76.8113413,11.0140977] }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.106:5000/api/update-driver",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"106"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update-driver"
+					]
+				},
+				"description": "Update Driver"
+			},
+			"response": []
+		}
+	]
+}

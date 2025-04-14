@@ -78,6 +78,8 @@ exports.viewPackeage = (req, res) => {
                     status : dt['status'],
                     customer : dt['customer'],
                     driver : dt['driver'],
+                    sourceLocation : dt['sourceLocation'].coordinates,
+                    destinationLocation : dt['destinationLocation'].coordinates,
                     createdAt : new Date(dt['createdAt']).toLocaleString(process.env.LOCALCODE,{hour12: false}) ,
                 }) 
             });
@@ -257,7 +259,7 @@ exports.assignDriver = (req, res) => {
                      { "new": true }
                 ).then(up=>{
                     if(up){
-                        console.log("UP--->",up)
+                        //console.log("UP--->",up)
                         res.status(200).json({status: 'success', message: 'Driver assigned successfully'})
                     }else{
                         res.status(201).json({status: 'error', message: 'Invalid Data'})
@@ -280,9 +282,22 @@ exports.StatusUpdate = (req, res) => {
              } },
              { "new": true }
         ).then(rs => {
-            if(rs){
-                Package.find({"pId": req.body.pId}).limit(1).then((data,err) => {
+            if(rs){                
+                Package.find({"pId": req.body.pId}).limit(1).then((data,err) => {                    
                     if(!err){
+                        
+                        if(req.body.status=='Delivered'){ //Change driver status 
+                            Driver.findOneAndUpdate(
+                                { "driverId": parseInt(data[0]['driver'][0]['id']) },
+                                { "$set": { assigned: "0"
+                                 } },
+                                 { "new": true }
+                            ).then(dupdate=>{
+                                if(dupdate)
+                                    console.log("DriverId-->",data[0]['driver'][0]['id'])
+                            })
+                            
+                        }
                         db.collection('logs').count(function (err, pcount) {
                             const logs = new Logs({
                                 lId:pcount+1,

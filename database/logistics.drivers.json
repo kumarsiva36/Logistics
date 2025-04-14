@@ -6,21 +6,21 @@
     "$numberLong": "1"
   },
   "name": "Siva",
-  "location": "chennai",
+  "location": "Coimbatore",
   "locationcoord": {
+    "type": "Point",
     "coordinates": [
-      76.8113413,
-      11.0140977
-    ],
-    "type": "Point"
+      76.9628425,
+      11.0018115
+    ]
   },
   "contact": "+919008007005",
-  "assigned": "0",
+  "assigned": "1",
   "createdAt": {
     "$date": "2025-04-12T09:53:02.623Z"
   },
   "updatedAt": {
-    "$date": "2025-04-12T09:53:02.623Z"
+    "$date": "2025-04-14T06:26:29.556Z"
   },
   "__v": 0
 },
@@ -31,22 +31,22 @@
   "driverId": {
     "$numberLong": "2"
   },
-  "name": "kumar",
-  "location": "coimbatore",
+  "name": "Sivakumar",
+  "location": "kerala",
   "locationcoord": {
+    "type": "Point",
     "coordinates": [
-      76.8113413,
-      11.0140977
-    ],
-    "type": "Point"
+      76.5120396,
+      10.3528744
+    ]
   },
-  "contact": "+919008007007",
-  "assigned": "1",
+  "contact": "9632587418",
+  "assigned": "0",
   "createdAt": {
     "$date": "2025-04-12T09:53:36.804Z"
   },
   "updatedAt": {
-    "$date": "2025-04-12T09:54:02.279Z"
+    "$date": "2025-04-14T05:35:47.780Z"
   },
   "__v": 0
 },
@@ -58,13 +58,13 @@
     "$numberLong": "3"
   },
   "name": "Driver01",
-  "location": "chennai",
+  "location": "Coimbatore",
   "locationcoord": {
+    "type": "Point",
     "coordinates": [
-      13.0836939,
-      80.270186
-    ],
-    "type": "Point"
+      76.9628425,
+      11.0018115
+    ]
   },
   "contact": "9632587415",
   "assigned": "0",
@@ -72,7 +72,59 @@
     "$date": "2025-04-12T11:11:01.938Z"
   },
   "updatedAt": {
-    "$date": "2025-04-12T11:11:01.938Z"
+    "$date": "2025-04-14T05:58:18.109Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fcd67aa7868a43a2709aa4"
+  },
+  "driverId": {
+    "$numberLong": "4"
+  },
+  "name": "Driver02",
+  "location": "chennai",
+  "locationcoord": {
+    "type": "Point",
+    "coordinates": [
+      80.270186,
+      13.0836939
+    ]
+  },
+  "contact": "9632589635",
+  "assigned": "1",
+  "createdAt": {
+    "$date": "2025-04-14T09:33:46.341Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-14T09:36:20.400Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fcd6e1a7868a43a2709aab"
+  },
+  "driverId": {
+    "$numberLong": "5"
+  },
+  "name": "Driver03",
+  "location": "Chennai",
+  "locationcoord": {
+    "coordinates": [
+      13.0836939,
+      80.270186
+    ],
+    "type": "Point"
+  },
+  "contact": "9874563215",
+  "assigned": "0",
+  "createdAt": {
+    "$date": "2025-04-14T09:35:29.822Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-14T09:35:29.822Z"
   },
   "__v": 0
 }]
